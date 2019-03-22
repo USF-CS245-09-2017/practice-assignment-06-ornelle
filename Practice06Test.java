@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.regex.*;
 
 
@@ -91,6 +92,8 @@ public class Practice06Test {
 			boolean emptiedEarly = false;
 			for (int i = 0; i < size_of_test; i++) {
 				if ( queue.empty() || stack.empty()) {
+					System.out.println("queue is " + queue.empty());
+					System.out.println("stack is " + stack.empty());
 					emptiedEarly = true;
 				}
 				queue.dequeue();
